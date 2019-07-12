@@ -1,0 +1,68 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title>Seletor de cores interativo</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h2>Seletor de cores interativo</h2>
+    <form method="post" action="sel_cor.php">
+
+    <br/>
+    <br/>
+
+    <label>R
+    <input type="text" name="R">
+    </label>
+
+    <br/>
+    <br/>
+
+    <label>G
+    <input type="text" name="G">
+    </label>
+
+    <br/>
+    <br/>
+
+    <label>B
+    <input type="text" name="B">
+
+    <br/>
+    <br/>
+
+   <input type = "submit" name = "Enviar" />
+   
+</form>
+</body>
+</html>
+
+----------------------------------------------------------------
+
+
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title>Seletor de cores interativo</title>
+</head>
+
+<body>
+    <h2>Seletor de cores interativo</h2>
+    <?php
+        //Get input values
+        $r = $_POST['R'];
+        $g = $_POST['G'];
+        $b = $_POST['B'];
+
+        //Generate RGB string from input
+        $rgb = $r . ',' . $g . ',' . $b;
+    ?>
+    R: <?php echo $r; ?>
+    G: <?php echo $g; ?>
+    B: <?php echo $b; ?>
+    <br /><br />
+    <div style="width: 150px; height: 150px; background-color: rgb(<?php echo $rgb; ?>)" /></div>
+
+
+</body>
+</html>
