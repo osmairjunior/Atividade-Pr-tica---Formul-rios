@@ -1,0 +1,47 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title>Seletor de carros</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h2>Selecione seu carro</h2>
+    <form method="post" action="sel_car.php">
+    Tipo: <br/>
+    <select name = "selTipo">
+    <option value = "Porsche 911">Porsche 911</option>"
+    <option value = "Volkswagen Beetle">Volkswagen Beetle1</option>"
+    <option value = "Ford Taurus">Ford Taurus</option>"
+   </select><br /><br>
+   Cor: <br/>
+   <input type = "text" name = "txtCor" />&nbsp;
+   <input type = "submit" name = "Enviar" />
+   
+</form>
+</body>
+</html>
+
+-------------------------------------------------------
+
+
+
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Seletor de carros</title>
+</head>
+
+<body>
+    <h2>Sucesso</h2>
+   <?php
+
+    // get form input
+   $tipo = $_POST ['selTipo'];
+   $cor = $_POST ['txtCor'];
+
+   // use form input
+   echo "Seu $tipo de cor $cor está pronto. Dirija com cuidado!";
+   ?>
+</body>
+</html>
