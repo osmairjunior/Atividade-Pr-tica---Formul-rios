@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <Title>Calculadora</TItle>
+<meta charset="utf-8"/>
+</head>
+
+<body>
+    
+    <h2>Calculadora</h2>
+
+    <form method="post" action="calc.php">
+        Valor 1: <input type="text" name="valor1"/>
+        <br><br>
+        Valor 2: <input type="text" name="valor2"/>
+        <br><br>
+        
+        Cálculo:
+        <br>
+
+        <input type="radio" name="operacao" value="somar"/>Somar
+        <input type="radio" name="operacao" value="dividir"/>Dividir
+        <input type="radio" name="operacao" value="subtrair"/>Subtrair
+        <input type="radio" name="operacao" value="multiplicar"/>Multiplicar
+        <br><br>
+
+    <input type="submit" value="Calcular"/>
+    <input type="reset"  value="Limpar"/>
+
+
+
+    </form>
+
+
+</body>
+</html>
+
+-----------------------------------------------------------------------------
+
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    
+<?php
+$valor1= $_POST['valor1'];
+$valor2= $_POST['valor2'];
+$operacao= $_POST['operacao'];
+if ($operacao=="somar"){
+    $total= $valor1+$valor2;
+}
+if ($operacao=="dividir"){
+    $total= $valor1/$valor2;
+}
+if ($operacao=="subtrair"){
+    $total= $valor1-$valor2;
+}
+if ($operacao=="multiplicar"){
+    $total= $valor1*$valor2;
+}
+echo "O valor do cálculo é " . $total;
+?>
+
+</body>
+</html>
