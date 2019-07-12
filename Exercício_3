@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <TItle>Seletor de vinho</TItle>
+<meta charset="utf-8"/>
+</head>
+
+<body>
+    
+    <h2>Seletor de Vinho</h2>
+
+    <form method="post" action="sel_vinho.php">
+        
+
+        digite seu nome:
+       <input type="text" name="nome"/>
+        </br>
+    </br>
+
+        <b>Escolha seu Tipo de Vinho Favorito: </b>
+</br>
+</br>
+
+       <input type="radio" name="vinho" value="tinto"/>Tinto
+    </br>
+    
+       <input type="radio" name="vinho" value="rose"/>Rose
+    </br>
+    
+       <input type="radio" name="vinho" value="branco"/>Branco
+    </br>
+</br>
+        <b>Digite sua Refeição favorita</b>
+        <input type="text" name="refeicao"/>
+</br><!DOCTYPE html>
+<html>
+<head>
+
+    <TItle>Seletor de vinho</TItle>
+<meta charset="utf-8"/>
+</head>
+
+<body>
+    
+    <h2>Seletor de Vinho</h2>
+
+    <form method="post" action="sel_vinho.php">
+        
+
+        digite seu nome:
+       <input type="text" name="nome"/>
+        </br>
+    </br>
+
+        <b>Escolha seu Tipo de Vinho Favorito: </b>
+</br>
+</br>
+
+       <input type="radio" name="vinho" value="tinto"/>Tinto
+    </br>
+    
+       <input type="radio" name="vinho" value="rose"/>Rose
+    </br>
+    
+       <input type="radio" name="vinho" value="branco"/>Branco
+    </br>
+</br>
+        <b>Digite sua Refeição favorita</b>
+        <input type="text" name="refeicao"/>
+</br>
+</br>
+    
+<input type="submit" value="Enviar">
+
+    </form>
+
+
+</body>
+</html>
+</br>
+    
+<input type="submit" value="Enviar">
+
+    </form>
+
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------
+
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    
+<h2>Restrado com sucesso</h2>
+
+<img src="IMG/tinto.png" width="150px" height="150px">
+<img src="IMG/branco.jpg" width="150px" height="150px">
+<img src="IMG/rose.jpg" width="150px" height="150px">
+
+<?php
+$nome= $_POST['nome'];
+$tipo_vinho= $_POST['vinho'];
+$ref_fav= $_POST['refeicao'];?>
+
+<br><br>
+
+<?php
+echo "Obrigado " . $nome . " pela sua preferencia ";?>
+<br><br>
+
+<?php
+echo "Você escolheu o vinho " . $tipo_vinho  ;?>
+<br><br>
+
+<?php
+echo "A sua refeição favorita é " . $ref_fav; ""
+?>
+<br><br>
+
+</body>
+</html>
